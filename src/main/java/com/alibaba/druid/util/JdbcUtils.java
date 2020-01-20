@@ -588,6 +588,8 @@ public final class JdbcUtils implements JdbcConstants {
             return CLICKHOUSE;
         }else if (rawUrl.startsWith("jdbc:presto:")) {
             return PRESTO;
+        }else if(rawUrl.startsWith("jdbc:oscar:")) {
+        	return OSCAR;
         } else {
             return null;
         }
